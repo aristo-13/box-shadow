@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box-shadow</title>
+    <link rel="stylesheet" href="/box-shadow/style.css">
+  
+</head>
+<body>
+    <div class="container">
+        <div class="box-area">
+            <div class="box"></div>
+        </div>
+        <div class="controls">
+            <div class="h-off">
+                <label for="h-off">Horizontal Offset</label>
+                <input class="panel" type="range" min="-40" max="20" step="1" value="0" id="h-off">
+            </div>
+            <div class="v-off">
+                <label for="v-off">Vertical Offset</label>
+                <input class="panel" type="range" min="-40" max="20" step="1" value="0" id="v-off">
+            </div>
+            <div class="blur-rad">
+                <label for="blur-rad">Blur Radius</label>
+                <input class="panel" type="range" min="0" max="100" step="1" value="0" id="blur-rad">
+            </div>
+            <div class="spread-rad">
+                <label for="spread-rad">Spread Radius</label>
+                <input class="panel" type="range" min="0" max="50" step="1" value="0" id="spread-rad">
+            </div>
+            <div class="color">
+                <input type="color" class="colorr">
+            </div>
+            <div class="style">
+                <span class="feed">Copied</span>
+                <input type="text" id="stylebox" readonly>
+            </div>
+        </div>
+        
+    </div>
+    <script src="/box-shadow/script.js"></script>
+</body>
+</html>
